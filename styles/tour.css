@@ -1,0 +1,93 @@
+.calendar {
+    padding: 4rem 1rem;
+    text-align: center;
+    opacity: 0;
+    animation: bounceInLeft 1.5s ease-out 1s forwards;
+}
+
+.calendar h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.calendar-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.calendar-container h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.calendar-grid span {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.calendar-grid input {
+    display: none;
+}
+
+.calendar-grid label {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ab96ff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calendar-grid label:hover {
+    background: black;
+    transform: scale(1.08);
+}
+
+.calendar-grid input:checked + label {
+    background: #ab96ff;
+    color: black;
+}
+
+.calendar-check {
+    margin-top: 2rem;
+    padding: 12px 40px;
+    background: black;
+    color: #ab96ff;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.calendar-check:hover {
+    background: #ab96ff;
+    color: black;
+}
+
+.calendar-check:active {
+    transform: scale(0.95);
+}   
+
+@media (max-width: 534px) {
+
+    .calendar-container {
+        padding: 2rem 0;
+    }
+
+    .calendar-grid {
+        gap: 4px;
+    }
+
+}
