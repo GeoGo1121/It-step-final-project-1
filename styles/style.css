@@ -103,7 +103,7 @@ a:hover {
     color: #ab96ff;
 }
 
-.menu a.active {
+.navbar a.active {
     color: #ab96ff;
 }
 
@@ -126,9 +126,12 @@ a:hover {
     padding-left: 1rem;
 }
 
-.menu {
+.navbar {
     display: flex;
     gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo-container {
@@ -231,11 +234,12 @@ button:hover {
         order: -1;
     }
 
-    .menu {
+    .navbar {
         position: fixed;
         inset: 0;
+        transform: none;
         background-color: black;
-
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -248,7 +252,7 @@ button:hover {
         z-index: 101;
     }
 
-    .menu.open {
+    .navbar.open {
         opacity: 1;
         visibility: visible;
     }
@@ -287,7 +291,7 @@ button:hover {
         transform: translateY(-11px) rotate(-45deg);
     }
 
-    .menu a {
+    .navbar a {
         font-size: 30px;
     }
 

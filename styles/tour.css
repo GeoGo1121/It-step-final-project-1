@@ -78,7 +78,77 @@
 
 .calendar-check:active {
     transform: scale(0.95);
-}   
+}
+
+section.tour {
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.tour-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+    font-size: 1.2rem;
+}
+
+.tour-img {
+    height: auto;
+    max-width: 60%;
+    object-fit: cover;
+}
+
+.tour-img img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.tour-container:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+h2, h5 {
+    padding-bottom: 1rem;
+}
+
+h1 {
+    padding-left: 2rem;
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+
+@media (max-width: 881px) {
+    .tour-container {
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tour-details,
+    .tour-img {
+        align-items: center;
+        max-width: 80%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .tour-container:nth-child(3) {
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+}
 
 @media (max-width: 534px) {
 
@@ -90,4 +160,12 @@
         gap: 4px;
     }
 
+    .tour-img {
+        max-width: 100%;
+    }
+
+    .tour-container {
+        padding: 1rem 0;
+        text-align: center;
+    }
 }
