@@ -89,9 +89,27 @@ button {
 body {
     font-family: 'Sora', 'Sans-Serif';
     color: white;
-    min-height: 100vh;
-    background: linear-gradient(180deg,#080808 0%, #180b25 30%, #32104a 60%, #190b2b 80%, #080808 100%);
-    background-repeat: no-repeat;
+    background-color: black;
+}
+
+section {
+    background: linear-gradient(
+        180deg,
+        #080808 0%,
+        #180b25 25%,
+        #32104a 50%,
+        #190b2b 75%,
+        #080808 100%
+    );
+}
+
+section.about-section {
+    background: linear-gradient(
+        180deg,
+        #080808 0%,
+        #190b2b 50%,
+        #080808 100%
+    );
 }
 
 a, a:visited {
@@ -116,7 +134,7 @@ a:hover {
     justify-content: space-between;
     padding: 8px;
     width: 100%;
-    background-color: #080808;
+    background-color: black;
     opacity: 0;
     animation: fadeIn 1s ease-out 1s forwards;
 }

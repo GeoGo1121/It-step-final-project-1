@@ -1,0 +1,16 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, p.privacy, h4.privacy {
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+    margin-inline: auto;
+}
+
+p.subtext {
+    font-size: small;
+}
