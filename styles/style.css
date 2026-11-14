@@ -86,13 +86,45 @@ button {
     }
 }
 
+@keyframes slideDownBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        transform: translateY(-15px);
+    }
+
+    70% {
+        transform: translateY(0);
+    }
+
+    82% {
+        transform: translateY(-7px);
+    }
+
+    92% {
+        transform: translateY(0);
+    }
+
+    97% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 body {
     font-family: 'Sora', 'Sans-Serif';
     color: white;
-    background-color: black;
-}
-
-section {
     background: linear-gradient(
         180deg,
         #080808 0%,
@@ -101,16 +133,7 @@ section {
         #190b2b 75%,
         #080808 100%
     );
-}
-
-section.about-section {
-    background: linear-gradient(
-        180deg,
-        #080808 0%,
-        #190b2b 50%,
-        #080808 100%
-    );
-}
+} 
 
 a, a:visited {
     color: white;

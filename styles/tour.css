@@ -1,20 +1,22 @@
 .calendar {
     padding: 4rem 1rem;
     text-align: center;
-    opacity: 0;
-    animation: bounceInLeft 1.5s ease-out 1s forwards;
 }
 
 .calendar h2 {
     font-size: clamp(1.5rem, 4vw, 3rem);
     text-transform: uppercase;
     margin-bottom: 3rem;
+    opacity: 0;
+    animation: bounceInLeft 1.5s ease-out 1s forwards;
 }
 
 .calendar-container {
     max-width: 500px;
     margin: 0 auto;
     padding: 2rem;
+    opacity: 0;
+    animation: bounceInLeft 1.5s ease-out 1s forwards;
 }
 
 .calendar-container h3 {
