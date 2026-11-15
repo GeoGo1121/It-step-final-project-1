@@ -23,40 +23,6 @@ h2 {
     font-size: 20px;
 }
 
-.music-navigation nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    opacity: 0;
-    animation: slideInLeft 1s ease-in-out 1s forwards;
-}
-
-.music-navigation a {
-    position: relative;
-    transition: 0.3s ease;
-}
-
-.music-navigation a:hover {
-    transform: translateX(5px);
-}
-
-.music-navigation a::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ab96ff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.music-navigation a:hover::after {
-    transform: scaleX(1);
-}
-
-
 .single-container {
     display: flex;
     justify-content: space-between;
