@@ -1,0 +1,57 @@
+
+
+body {
+    background: #000;
+}
+
+article {
+    padding: 2rem;
+    background-color: black;
+}
+
+div.line {
+    height: 1px;
+    background-color: white;
+    margin-bottom: 1rem;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1, h2 {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+p {
+    padding-bottom: 2rem;
+}
+
+ul li {
+    padding-bottom: 1rem;
+}
+
+h1, p, h2, ul {
+    width: min(80%, 950px);
+    margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+    h1, h2 {
+        text-align: center;
+        margin-inline: auto;
+        font-size: 1.5rem;
+    }
+
+    div.line {
+        max-width: 100%;
+        margin-inline: 0;
+    }
+
+    article {
+        padding: 1rem 0;
+    }
+}
