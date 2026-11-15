@@ -28,16 +28,18 @@ h2 {
     justify-content: space-between;
     padding: 1rem 2rem;
     opacity: 0;
-    animation: slideInLeft 2s ease-in-out 0.5s forwards;
+    animation: slideInLeft 2s ease-in-out 1s forwards;
 }
 
 .single-container:nth-child(odd) {
     flex-direction: row-reverse;
-    animation: slideInRight 2s ease-in-out 0.5s forwards;
+    animation: slideInRight 2s ease-in-out 1s forwards;
 }
 
 .song {
-    width: 40%;
+   width: 40%;
+   opacity: 0;
+   animation: fadeInUp 1s ease-in-out 3s forwards 
 }
 
 .single-info {
