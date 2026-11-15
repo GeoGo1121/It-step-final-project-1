@@ -67,7 +67,7 @@ input, select {
 input,
 textarea,
 select {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 input, select, textarea {
@@ -104,5 +104,9 @@ button {
         min-width: 80%;
         margin: 0;
         padding: 1rem;
+    }
+
+    section.contact {
+        padding: 2rem 1rem;
     }
 }

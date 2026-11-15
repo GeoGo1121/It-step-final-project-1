@@ -93,7 +93,6 @@ section.journey {
 
 .title {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     width: 60%;
     padding-bottom: 1rem;

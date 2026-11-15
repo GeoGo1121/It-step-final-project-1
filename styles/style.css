@@ -76,7 +76,19 @@ button {
         opacity: 0;
         transform: translateX(-100%);
     }
-    100% { opacity: 1;
+    100% { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
         transform: translateX(0);
     }
 }
@@ -139,7 +151,8 @@ a:hover {
     color: #ab96ff;
 }
 
-.navbar a.active {
+.navbar a.active,
+.music-navbar a.active {
     color: #ab96ff;
 }
 
