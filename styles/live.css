@@ -81,7 +81,7 @@
     margin-bottom: 100px;
 }
 
-.performance-container:nth-child(odd) {
+.performance-container:last-child {
     flex-direction: row-reverse;
 }
 
@@ -244,7 +244,7 @@
         margin-bottom: 2rem 0;
     }
 
-    .performance-container:nth-child(odd) {
+    .performance-container:last-child {
         flex-direction: column-reverse;
     }
 
