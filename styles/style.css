@@ -468,7 +468,7 @@ button:hover {
         align-items: center;
     }
 
-    h1, h2 {
+    .music-title h1, .music-title h2 {
         text-align: center;
     }
 

@@ -1,0 +1,380 @@
+.live-section {
+    padding: 2rem;
+}
+
+
+/* HERO */
+
+.live-hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("images/live-hero.jpg") center/cover;
+}
+
+.live-hero-content {
+    max-width: 750px;
+    opacity: 0;
+    animation: slideInRight 3s ease-out forwards 1s;
+}
+
+.music-navigation {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.eyebrow,
+.section-heading span,
+.performance-date {
+    color: #8956A5;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.live-hero h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.live-hero h1 span {
+    color: #8956A5;
+}
+
+.live-hero p {
+    max-width: 600px;
+    line-height: 1.8;
+    color: #bbb;
+    font-size: 1.05rem;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.section-heading span {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.5rem, 7vw, 3.2rem);
+    margin-bottom: 1rem;
+}
+
+.section-heading p {
+    color: #999;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+
+/* PERFORMANCE CONTAINERS */
+
+.performance-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.performance-container:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.performance-container .video {
+    flex: 1.4;
+}
+
+.performance-container img,
+.moment-card img,
+.performance-container img,
+.reunion-section img {
+    width: 100%;
+}
+
+.performance-container .text {
+    flex: 1;
+}
+
+.performance-container h2 {
+    font-size: clamp(1rem, 4vw, 2.8rem);
+    margin: 1rem 0;
+}
+
+.performance-container h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.performance-container p {
+    color: #aaa;
+    line-height: 1.9;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #111;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* UNFORGETTABLE MOMENTS */
+
+.moments-section {
+    padding-top: 3rem;
+    border-top: 1px solid #333;
+}
+
+.moments-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.moment-card {
+    background: #151515;
+    transition: transform 0.3s ease;
+}
+
+.moment-card:hover {
+    transform: translateY(-8px);
+}
+
+.moment-info {
+    padding: 2rem;
+}
+
+.moment-info span {
+    color: #8956A5;
+    font-size: 0.75rem;
+}
+
+.moment-info h3 {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.moment-info p {
+    color: #999;
+    line-height: 1.7;
+}
+
+
+/* ACOUSTIC SESSIONS */
+
+.acoustic-section {
+    padding-top: 4rem;
+    border-top: 1px solid #333;
+}
+
+
+/* REUNION */
+
+.reunion-section {
+    padding: 8rem 3rem;
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.9)
+        ),
+        url("images/reunion.jpg") center/cover;
+}
+
+.reunion-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+.reunion-content > span {
+    color: #8956A5;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.reunion-content h2 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1.1;
+    margin: 2rem 0;
+}
+
+.reunion-content p {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    color: #aaa;
+    line-height: 1.9;
+}
+
+.reunion-content h3 {
+    margin-top: 3rem;
+    color: #8956A5;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .live-hero {
+        min-height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 35px;
+        padding: 4rem 2rem;
+    }
+    
+
+    .live-hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .live-hero p {
+        max-width: none;
+    }
+
+    .live-hero .music-navigation {
+        margin: auto;
+    }
+
+    .performance-container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 25px;
+        margin-bottom: 2rem 0;
+    }
+
+    .performance-container:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .performance-container .video,
+    .performance-container .text {
+        width: 100%;
+        flex: none;
+    }
+
+    .moments-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .live-hero {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .live-hero h1 {
+        font-size: clamp(2.5rem, 9vw, 4rem);
+    }
+
+    .live-hero p {
+        font-size: 0.95rem;
+    }
+
+    .moments-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .reunion-section {
+        padding: 5rem 1.5rem;
+    }
+
+    .reunion-content h2 {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .live-section {
+        padding: 0 1.5rem;
+        margin: 5rem auto;
+    }
+
+    .live-hero {
+        padding: 3rem 1.2rem;
+    }
+
+    .reunion-section {
+        padding: 5rem 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .live-hero {
+        padding: 4rem 1rem;
+    }
+
+    .live-hero h1 {
+        font-size: clamp(1.4rem, 7.5vw, 2.4rem);
+        white-space: nowrap;
+    }
+
+    .music-navbar {
+        gap: 18px;
+    }
+
+    .music-navbar a {
+        font-size: 0.85rem;
+    }
+
+    .live-section {
+        padding: 0 1rem;
+        margin: 3.75rem auto;
+    }
+
+    .section-heading p,
+    .performance-container p,
+    .moment-info p,
+    .reunion-content p {
+        font-size: 0.9rem;
+    }
+
+    .moment-info {
+        padding: 1rem;
+    }
+
+    .moment-info h3 {
+        font-size: 1.15rem;
+    }
+
+    .reunion-section {
+        padding: 4rem 1rem;
+    }
+
+    .reunion-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .reunion-content h3 {
+        font-size: 0.85rem;
+    }
+
+}
