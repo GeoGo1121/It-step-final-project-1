@@ -2,9 +2,6 @@
     padding: 2rem;
 }
 
-
-/* HERO */
-
 .live-hero {
     min-height: 100vh;
     display: flex;
@@ -17,7 +14,6 @@
             rgba(0, 0, 0, 0.9),
             rgba(0, 0, 0, 0.3)
         ),
-        url("images/live-hero.jpg") center/cover;
 }
 
 .live-hero-content {
@@ -57,8 +53,6 @@
     font-size: 1.05rem;
 }
 
-/* SECTION HEADINGS */
-
 .section-heading {
     margin-bottom: 2rem;
     padding: 2rem;
@@ -79,9 +73,6 @@
     max-width: 600px;
     line-height: 1.8;
 }
-
-
-/* PERFORMANCE CONTAINERS */
 
 .performance-container {
     display: flex;
@@ -138,9 +129,6 @@
     border: none;
 }
 
-
-/* UNFORGETTABLE MOMENTS */
-
 .moments-section {
     padding-top: 3rem;
     border-top: 1px solid #333;
@@ -180,16 +168,10 @@
     line-height: 1.7;
 }
 
-
-/* ACOUSTIC SESSIONS */
-
 .acoustic-section {
     padding-top: 4rem;
     border-top: 1px solid #333;
 }
-
-
-/* REUNION */
 
 .reunion-section {
     padding: 8rem 3rem;
@@ -199,7 +181,6 @@
             rgba(0, 0, 0, 0.85),
             rgba(0, 0, 0, 0.9)
         ),
-        url("images/reunion.jpg") center/cover;
 }
 
 .reunion-content {
@@ -230,9 +211,6 @@
     margin-top: 3rem;
     color: #8956A5;
 }
-
-
-/* RESPONSIVE */
 
 @media (max-width: 850px) {
 
